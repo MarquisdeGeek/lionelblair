@@ -1,2 +1,91 @@
-Test
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>So, Lionel Blair...</title>
 
+<script type="text/javascript">
+<!--
+
+function getRandom(list) {
+  var item = list[Math.floor(Math.random()*list.length)];
+  item = item.replace("$LB", "Lionel Blair");
+  return item;
+}
+
+function lionel() {
+  var phrase = getRandom([
+    "The master was $LB. ",
+    "The master of the form was $LB. ",
+    "The mime master was $LB. ",
+    "$LB was the master of mime. "
+  ]);
+  phrase += getRandom([
+    "Who can forget the time he ",
+    "Who else remembers when he managed to ",
+    "Who can forget his breathtaking smile ",
+    "Who can forget his look of joy ",
+    "Who was struck by his tears of pleasure ",
+    "Who can forget the relish he showed "
+  ]);
+  phrase += getRandom([
+    "when he managed to pull off ",
+    "as finished off "
+  ]);
+  phrase += getRandom([
+    "12 angry men ",
+    "3 men in a boat ",
+    "all the presidents men ",
+    "the 2 men of Verona ",
+    "1 man and his dog ",
+    "the talented Mr Ripley ",
+    "Uncle Vanya ",
+    "Lucky Jim ",
+    "the fabulous baker boys "
+  ]);
+  phrase += getRandom([
+    "inside 30 seconds?",
+    "inside 60 seconds?",
+    "inside 90 seconds?",
+    "in under 30 seconds?",
+    "in under a minute?",
+    "in under two minutes?",
+    "in two minutes?"
+  ]);
+
+  return phrase;
+}
+
+//-->
+</script>
+<style type="text/css" media="screen">
+<!--
+* { box-sizing: border-box; }
+body {margin: 0; padding: 0; font-family: Verdana,Geneva,sans-serif;}
+#outer { position: absolute; display: table; width: 100%; height: 99%; margin: 0 auto; }
+#upper { display: table-row; width: 100%; height: 85%; }
+#lower { display: table-row; width: 100%; height: 15%; max-height: 90px; }
+#content { position: relative; display: table-cell; vertical-align: middle; text-align: center; }
+#footer { position: relative; display: table-cell; vertical-align: bottom; text-align: center; }
+.big { font-size: 36pt; }
+-->
+</style>
+
+  </head>
+
+  <body bgcolor="#ffffff">
+  <div id="outer">
+    <div id="upper">
+      <div id="content">
+        <span class="big"><script>document.write(lionel());</script></span>
+      </div>    
+    </div>
+    <div id="lower">
+      <div id="footer">
+            Send me an update via the <a href="https://github.com/MarquisdeGeek/lionelblair">Github project</a>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
